@@ -1,0 +1,8 @@
+@use "../styles/variables.scss";
+
+.container {
+    width: 100%;
+    height: calc(100% - variables.$chart-header);
+    background-color: rgb(255, 0, 245, 0.05);
+    border-radius: 27px;
+}
