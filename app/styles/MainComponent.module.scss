@@ -1,4 +1,6 @@
+@use "../styles/variables.scss";
+
 .container {
-    width: 995px;
+    width: variables.$main-container-width;
     height: 476px;
 }

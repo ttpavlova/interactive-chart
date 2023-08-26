@@ -1,6 +1,7 @@
 @use "../styles/variables.scss";
 
 .header {
+    position: relative;
     height: variables.$chart-header;
     width: 100%;
 }

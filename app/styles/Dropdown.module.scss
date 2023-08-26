@@ -1,0 +1,37 @@
+@use "../styles/variables.scss";
+
+$border-radius: 2px;
+
+.container {
+    position: absolute;
+    right: 0;
+    height: calc(variables.$chart-header - 28px);
+    width: variables.$main-container-width - 615px;
+    border: $border-radius solid #000AFF;
+    border-radius: 28px;
+}
+
+.text_positioned {
+    position: absolute;
+    top: calc(9px - $border-radius);
+    left: calc(20px - $border-radius);
+    width: 281px;
+    transition: color 0.15s ease-out;
+}
+
+.text_positioned:hover {
+    color: #000AFF;
+    transition: color 0.15s ease-out;
+}
+
+.arrow {
+    position: absolute;
+    top: calc(17px - $border-radius);
+    right: calc(16px - $border-radius);
+    transition: transform 0.3s ease-out;
+}
+
+.hidden {
+    transform: scaleY(-1);
+    transition: transform 0.3s ease-out;
+}
