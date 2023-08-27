@@ -1,0 +1,13 @@
+.item {
+    width: 16px;
+    height: 1px;
+    background-color: #000AFF;
+
+    &__small {
+        height: 71px;
+    }
+
+    &__large {
+        height: 218px;
+    }
+}
