@@ -43,6 +43,7 @@
     visibility: visible;
     opacity: 1;
     transition: opacity 0.3s ease-out;
+    z-index: 1;
 }
 
 .dropdown_options__hidden {

@@ -1,10 +1,14 @@
 import styles from "../styles/ChartHeader.module.scss";
 import Dropdown from "./Dropdown";
 
-const ChartHeader = () => {
+interface ChartHeaderProps {
+    changeMonthNumber: (newNumber: number) => void;
+}
+
+const ChartHeader = ({ changeMonthNumber }: ChartHeaderProps) => {
     return (
         <div className={styles.header}>
-            <Dropdown />
+            <Dropdown changeMonthNumber={changeMonthNumber} />
         </div>
     );
 };
