@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import styles from "../styles/Dropdown.module.scss";
+import styles from "./Dropdown.module.scss";
 
 interface DropdownProps {
     changeMonthNumber: (newNumber: number) => void;
@@ -42,7 +42,7 @@ const Dropdown = ({ changeMonthNumber }: DropdownProps) => {
                 width={28}
                 height={17}
                 className={
-                    styles.arrow + (open ? " " + styles.arrow__hidden : "")
+                    styles.arrow + (open ? " " + styles.arrow__flipped : "")
                 }
                 onClick={openDropdown}
                 aria-expanded={open}

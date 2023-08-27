@@ -1,4 +1,4 @@
-import styles from "../styles/YAxis.module.scss";
+import styles from "./YAxis.module.scss";
 
 const YAxis = () => {
     const values = ["0", "500", "1 000", "2 000", "5 000", "10 000"].reverse();

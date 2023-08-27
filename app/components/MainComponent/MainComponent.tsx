@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../styles/MainComponent.module.scss";
-import Chart from "./Chart";
-import ChartHeader from "./ChartHeader";
+import styles from "./MainComponent.module.scss";
+import Chart from "../Chart/Chart";
+import ChartHeader from "../ChartHeader/ChartHeader";
 
 const MainComponent = () => {
     const [monthNumber, setMonthNumber] = useState(1);

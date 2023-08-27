@@ -1,6 +1,6 @@
-import styles from "../styles/Chart.module.scss";
-import XAxis from "./XAxis";
-import YAxis from "./YAxis";
+import styles from "./Chart.module.scss";
+import XAxis from "../XAxis/XAxis";
+import YAxis from "../YAxis/YAxis";
 
 interface ChartProps {
     monthNumber: number;

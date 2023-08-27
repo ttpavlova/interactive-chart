@@ -1,4 +1,4 @@
-import styles from "../styles/XAxis.module.scss";
+import styles from "./XAxis.module.scss";
 
 interface XAxisProps {
     monthNumber: number;

@@ -1,5 +1,5 @@
-import styles from "../styles/ChartHeader.module.scss";
-import Dropdown from "./Dropdown";
+import styles from "./ChartHeader.module.scss";
+import Dropdown from "../Dropdown/Dropdown";
 
 interface ChartHeaderProps {
     changeMonthNumber: (newNumber: number) => void;
