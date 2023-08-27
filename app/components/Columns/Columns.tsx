@@ -31,7 +31,7 @@ const Columns = ({ monthNumber }: ColumnsProps) => {
     return (
         <div className={styles.container}>
             {data.map((column) => (
-                <Column key={column[0]} value={column[1]} />
+                <Column key={column[0] + monthNumber} value={column[1]} />
             ))}
         </div>
     );

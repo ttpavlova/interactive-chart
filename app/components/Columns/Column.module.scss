@@ -2,12 +2,35 @@
     width: 16px;
     height: 1px;
     background-color: #000AFF;
+    border-radius: 4px;
 
     &__small {
         height: 71px;
+        animation: height_small 0.6s ease-in-out;
     }
 
     &__large {
+        height: 218px;
+        animation: height_large 0.6s ease-in-out;
+    }
+}
+
+@keyframes height_small {
+    from {
+        height: 1px;
+    }
+
+    to {
+        height: 71px;
+    }
+}
+
+@keyframes height_large {
+    from {
+        height: 1px;
+    }
+
+    to {
         height: 218px;
     }
 }
