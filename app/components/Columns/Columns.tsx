@@ -1,40 +1,22 @@
 import Column from "./Column";
 import styles from "./Columns.module.scss";
-import { month, half_year, year } from "../../data";
+import { GraphValues } from "@/app/types";
 
 interface ColumnsProps {
     monthNumber: number;
+    data: GraphValues;
 }
 
-const Columns = ({ monthNumber }: ColumnsProps) => {
-    let columnsNumber = 0;
-    let data = [];
+const Columns = ({ monthNumber, data }: ColumnsProps) => {
+    const getColumnList = (data: GraphValues) => {
+        const entries = Object.entries(data);
 
-    switch (monthNumber) {
-        case 1:
-            columnsNumber = 31;
-            data = Object.entries(month);
-            break;
-        case 6:
-            columnsNumber = 6;
-            data = Object.entries(half_year);
-            break;
-        case 12:
-            columnsNumber = 12;
-            data = Object.entries(year);
-            break;
-        default:
-            columnsNumber = 31;
-            data = Object.entries(month);
-    }
+        return entries.map((column) => (
+            <Column key={column[0] + monthNumber} value={column[1]} />
+        ));
+    };
 
-    return (
-        <div className={styles.container}>
-            {data.map((column) => (
-                <Column key={column[0] + monthNumber} value={column[1]} />
-            ))}
-        </div>
-    );
+    return <div className={styles.container}>{getColumnList(data)}</div>;
 };
 
 export default Columns;
