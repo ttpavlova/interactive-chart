@@ -24,7 +24,6 @@
 
     &__flipped {
         transform: scaleY(-1);
-        transition: transform 0.3s ease-out;
     }
 
     &:hover {
@@ -51,7 +50,6 @@
         border: 0;
         visibility: hidden;
         opacity: 0;
-        transition: opacity 0.3s ease-out;
     }
 }
 
@@ -82,5 +80,4 @@
 
 .text_positioned:hover, .dropdown_item__text:hover {
     color: #000AFF;
-    transition: color 0.15s ease-out;
 }
