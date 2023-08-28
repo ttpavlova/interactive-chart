@@ -3,9 +3,9 @@
 .dropdown_container {
     position: absolute;
     right: 0;
-    height: calc(variables.$chart-header - 28px);
-    width: calc(variables.$main-container-width - 615px);
-    border: 2px solid #000AFF;
+    height: 48px;
+    width: 380px;
+    border: 2px solid variables.$accent-color;
     border-radius: 28px;
 }
 
@@ -33,10 +33,10 @@
 
 .dropdown_options {
     position: absolute;
-    top: calc(variables.$chart-header - 30px);
+    top: 46px;
     width: 100%;
     padding: 20px;
-    border: 2px solid #000AFF;
+    border: 2px solid variables.$accent-color;
     border-radius: 28px;
     background-color: #fff;
     visibility: visible;
@@ -79,5 +79,5 @@
 }
 
 .text_positioned:hover, .dropdown_item__text:hover {
-    color: #000AFF;
+    color: variables.$accent-color;
 }

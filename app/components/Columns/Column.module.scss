@@ -1,3 +1,5 @@
+@use "../../styles/variables.scss";
+
 .container {
     position: relative;
     display: flex;
@@ -8,7 +10,7 @@
 .item {
     width: 16px;
     height: 1px;
-    background-color: #000AFF;
+    background-color: variables.$accent-color;
     border-radius: 4px;
     transition: box-shadow 0.2s ease-out;
 
