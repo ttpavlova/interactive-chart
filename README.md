@@ -13,10 +13,10 @@
 
 Скриншоты представлены ниже:
 
-![graph last month](/showcase/img/graph_last_month.png)
+![graph last month](/showcase/img/graph_last_month.PNG)
 <p align="center">График значений за последний месяц</p>
 
-![graph last year](/showcase/img/graph_last_year.png)
+![graph last year](/showcase/img/graph_last_year.PNG)
 <p align="center">График значений за последний год</p>
 
 ## Запуск
