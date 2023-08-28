@@ -41,13 +41,10 @@
     background-color: #fff;
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
     z-index: 1;
 
     &__hidden {
-        height: 0;
-        padding: 0;
-        border: 0;
         visibility: hidden;
         opacity: 0;
     }
